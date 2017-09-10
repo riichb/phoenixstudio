@@ -3,12 +3,65 @@
   <head>
     <meta charset="utf-8">
     <title>Phoenix Studio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- TODO: Add SEO Stuff  -->
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <div class="splash-container">
-      <h1>Coming soon!</h1>
-      <p>Phoenix Studio is a design and engineering agency built by two humble individuals that love to design and code!</p>
-    </div>
+    <header>
+      <h1 class="title-header">Phoenix Studio</h1>
+      <nav>
+        <ul>
+          <li>Work</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-container">
+      <h2 class="headline">Tell us your ideas and we'll bring them to life</h2>
+      <p class="sub-headline">We craft digital experiences at an affordable price</p>
+      <button class="work-together-btn" type="button" name="button">LET'S WORK TOGETHER</button>
+    </section>
+
+    <section class="service-container">
+      <h2>Our Services</h2>
+      <ul>
+        <li class="service">
+          <h3>Frontend Development</h3>
+          <p>Whether it's creating a website from scratch or updating your current wordpress blog, we do it all! Our engineers love to code!</p>
+        </li>
+        <li class="service">
+          <h3>UI/UX Design</h3>
+          <p>Through clean and responsive designm we create great expeirences for users across all devices and platforms.</p>
+        </li>
+        <li class="service">
+          <h3>Photography</h3>
+          <p>Events, headshots, concept work - we'll take care of your photography needs!</p>
+        </li>
+      </ul>
+      <div class="skills-container">
+        <ul class="skills">
+          <li class="bg-html"></li>
+          <li class="bg-css"></li>
+          <li class="bg-js"></li>
+          <li class="bg-ember"></li>
+          <li class="bg-react"></li>
+          <li class="bg-sass"></li>
+          <li class="bg-bootstrap"></li>
+          <li class="bg-wp"></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-container">
+      <h2 class="headline"></h2>
+      <form method="POST" action="http://formspree.io/phoenixstudiocompany@gmail.com">
+        <input type="email" name="email" placeholder="Your email">
+        <textarea name="message" placeholder="Your message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
   </body>
 </html>

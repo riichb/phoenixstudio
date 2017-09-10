@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.frontend-skills, .bg-html, .bg-css, .bg-js, .bg-ember, .bg-react, .bg-sass, .bg-bootstrap, .bg-wp {
+  background-image: url("img/frontend-skills.png");
+  background-repeat: no-repeat; }
+
+.bg-html {
+  width: 84px;
+  height: 119px;
+  background-position: -291px -154px; }
+
+.bg-css {
+  width: 88px;
+  height: 124px;
+  background-position: -291px -10px; }
+
+.bg-js {
+  width: 94px;
+  height: 131px;
+  background-position: -10px -147px; }
+
+.bg-ember {
+  width: 132px;
+  height: 50px;
+  background-position: -10px -298px; }
+
+.bg-react {
+  width: 130px;
+  height: 117px;
+  background-position: -10px -10px; }
+
+.bg-sass {
+  width: 112px;
+  height: 85px;
+  background-position: -399px -10px; }
+
+.bg-bootstrap {
+  width: 108px;
+  height: 108px;
+  background-position: -160px -141px; }
+
+.bg-wp {
+  width: 111px;
+  height: 111px;
+  background-position: -160px -10px; }
+
+/*# sourceMappingURL=main.css.map */
