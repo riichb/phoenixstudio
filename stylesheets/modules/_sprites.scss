@@ -1,0 +1,52 @@
+.frontend-skills {
+  background-image: url('img/frontend-skills.png');
+  background-repeat: no-repeat;
+}
+
+.bg-html {
+  @extend .frontend-skills;
+  width: 84px; height: 119px;
+  background-position: -291px -154px;
+}
+
+.bg-css {
+  @extend .frontend-skills;
+  width: 88px; height: 124px;
+  background-position: -291px -10px;
+}
+
+.bg-js {
+  @extend .frontend-skills;
+  width: 94px; height: 131px;
+  background-position: -10px -147px;
+}
+
+.bg-ember {
+  @extend .frontend-skills;
+  width: 132px; height: 50px;
+  background-position: -10px -298px;
+}
+
+.bg-react {
+  @extend .frontend-skills;
+  width: 130px; height: 117px;
+  background-position: -10px -10px;
+}
+
+.bg-sass {
+  @extend .frontend-skills;
+  width: 112px; height: 85px;
+  background-position: -399px -10px;
+}
+
+.bg-bootstrap {
+  @extend .frontend-skills;
+  width: 108px; height: 108px;
+  background-position: -160px -141px;
+}
+
+.bg-wp {
+  @extend .frontend-skills;
+  width: 111px; height: 111px;
+  background-position: -160px -10px;
+}

@@ -4,16 +4,26 @@
     <meta charset="utf-8">
     <title>Phoenix Studio</title>
     <!-- TODO: Add SEO Stuff  -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+      integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
   </head>
   <body>
-    <header>
+    <header class="nav-container">
       <h1 class="title-header">Phoenix Studio</h1>
       <nav>
-        <ul>
-          <li>Work</li>
-          <li>About</li>
-          <li>Contact</li>
+        <ul class="nav-list">
+          <li><a href="#">Work</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -25,8 +35,8 @@
     </section>
 
     <section class="service-container">
-      <h2>Our Services</h2>
-      <ul>
+      <h2 class="headline">Our Services</h2>
+      <ul class="service-list">
         <li class="service">
           <h3>Frontend Development</h3>
           <p>Whether it's creating a website from scratch or updating your current wordpress blog, we do it all! Our engineers love to code!</p>
@@ -41,8 +51,9 @@
         </li>
       </ul>
       <div class="skills-container">
+        <h3 class="service-skills">Skills</h3>
         <ul class="skills">
-          <li class="bg-html"></li>
+          <li class="bg-html wow animated bounceInLeft"></li>
           <li class="bg-css"></li>
           <li class="bg-js"></li>
           <li class="bg-ember"></li>
@@ -55,13 +66,32 @@
     </section>
 
     <section class="contact-container">
-      <h2 class="headline"></h2>
-      <form method="POST" action="http://formspree.io/phoenixstudiocompany@gmail.com">
-        <input type="email" name="email" placeholder="Your email">
-        <textarea name="message" placeholder="Your message"></textarea>
-        <button type="submit">Send</button>
-      </form>
+      <h2 class="headline">Contact</h2>
+      <div class="info-container">
+        <p>We look forward to speakring with you!</p>
+        <form class="form-container" method="POST" action="http://formspree.io/phoenixstudiocompany@gmail.com">
+          <div class="form-fillout">
+            <div class="contact-info">
+              <div class="form-fullname">
+                <input type="text" name="firstname" placeholder="First Name">
+                <input type="text" name="lastname" placeholder="Last Name">
+              </div>
+              <input type="email" name="email" placeholder="Your email">
+              <input type="hidden" name="_subject" value="New submission!" />
+              <input type="text" name="_gotcha" style="display:none" />
+            </div>
+            <textarea class="message-area" name="message" placeholder="You dream it, we build it..."></textarea>
+          </div>
+          <div class="form-btn-container">
+            <button class="form-send-btn" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
     </section>
 
+    <footer class="footer">
+      <span>&copy; 2017 phoenix Studio</span>
+    </footer>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

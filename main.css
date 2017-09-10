@@ -1,7 +1,35 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: avenir, Georgia, Serif; }
+
+body {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.9; }
+
+a:hover {
+  opacity: 1; }
+
+li {
+  list-style: none; }
+
+.headline {
+  font-weight: 400;
+  max-width: 500px;
+  font-size: 3.3em;
+  font-family: "Big Caslon", "Book Antiqua", Georgia, serif; }
+
+h3 {
+  font-weight: 400;
+  border-bottom: 6px solid #FFC669;
+  margin-bottom: 25px; }
 
 .frontend-skills, .bg-html, .bg-css, .bg-js, .bg-ember, .bg-react, .bg-sass, .bg-bootstrap, .bg-wp {
   background-image: url("img/frontend-skills.png");
@@ -46,5 +74,120 @@
   width: 111px;
   height: 111px;
   background-position: -160px -10px; }
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em 0;
+  height: 65px;
+  line-height: 65px; }
+  .nav-container .title-header {
+    margin: 0;
+    font-size: 3em;
+    color: #FFC669; }
+  .nav-container .nav-list {
+    display: flex;
+    flex-direction: row; }
+    .nav-container .nav-list li {
+      width: 100%;
+      margin-left: 55px;
+      padding-bottom: 10px; }
+
+.hero-container {
+  height: 100%;
+  padding: 10% 0 25% 0; }
+  .hero-container .sub-headline {
+    margin-top: 10px;
+    font-size: 1em; }
+  .hero-container .work-together-btn {
+    margin-top: 40px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #2E2E2E;
+    cursor: pointer;
+    font-size: .8em;
+    font-family: avenir, Georgia, Serif; }
+
+.service-container {
+  height: 100%; }
+  .service-container .service-list {
+    display: flex;
+    flex-direction: row;
+    margin: 35px 0;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .service-container .service {
+    max-width: 300px;
+    margin-bottom: 30px;
+    text-align: center; }
+  .service-container .service-skills {
+    text-align: center; }
+  .service-container .skills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 550px;
+    margin: 100px auto; }
+    .service-container .skills li {
+      margin: 0 15px; }
+
+.contact-container {
+  height: 100%;
+  height: 500px; }
+  .contact-container .info-container {
+    width: 100%;
+    margin-top: 50px; }
+  .contact-container .form-container {
+    display: flex;
+    flex-direction: column; }
+  .contact-container .form-fillout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 35px; }
+  .contact-container .contact-info {
+    margin-right: 40px; }
+  .contact-container input:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .contact-container input {
+    border: none;
+    border-bottom: 1px solid #CECECE;
+    padding-bottom: 8px;
+    outline: none;
+    font-family: avenir, Georgia, Serif;
+    font-weight: 400; }
+    .contact-container input:focus {
+      border-bottom: 3px solid #009688; }
+  .contact-container input[type="email"] {
+    margin-top: 50px;
+    width: 100%; }
+  .contact-container .message-area {
+    flex-grow: 1;
+    resize: none;
+    padding: 20px;
+    border: 1px solid #CECECE;
+    border-radius: 2px;
+    outline: none; }
+    .contact-container .message-area:focus {
+      border-color: #009688; }
+  .contact-container .form-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .contact-container .form-send-btn {
+    margin-top: 50px;
+    width: 200px;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-family: avenir, Georgia, Serif;
+    font-weight: 400;
+    background-color: #009688; }
+
+.footer {
+  display: flex;
+  justify-content: center; }
 
 /*# sourceMappingURL=main.css.map */

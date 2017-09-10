@@ -1,0 +1,20 @@
+.hero-container {
+  height: 100%;
+  padding: 10% 0 25% 0;
+
+  .sub-headline {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+
+  .work-together-btn {
+    margin-top: 40px;
+    padding:  20px;
+    background: white;
+    border: 1px solid $charcoal-black;
+    cursor: pointer;
+    font-size: .8em;
+    font-family: avenir, Georgia, Serif;
+  }
+
+}

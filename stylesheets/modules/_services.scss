@@ -1,0 +1,32 @@
+.service-container {
+  height: 100%;
+
+  .service-list {
+    display: flex;
+    flex-direction: row;
+    margin: 35px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .service {
+    max-width: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .service-skills {
+    text-align: center;
+  }
+
+  .skills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 550px;
+    margin: 100px auto;
+    li {
+      margin: 0 15px;
+    }
+  }
+}
