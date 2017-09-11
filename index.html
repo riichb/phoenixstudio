@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="identifier-url" content="https://www.phoenixstudio.io/" />
+    <meta name="title" content="Phoenix studio design and engineering agency bay area san francisco cheap phoenix studio" />
+    <meta name="description" content="Two developers and designer who want to create beautiful website for cheap price phoenix studio" />
+    <meta name="keywords" content="websites, web, engineering, engineer, design, ux design, user experience, html, css, frontend, cheap,phoenix, studio" />
     <title>Phoenix Studio</title>
-    <!-- TODO: Add SEO Stuff  -->
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-      integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
-      crossorigin="anonymous">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
+    <link rel="stylesheet" href="stylesheets/vendor/animate-it.css">
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -20,23 +21,20 @@
   <body>
     <header class="nav-container">
       <h1 class="title-header">Phoenix Studio</h1>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="#">Work</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
     </header>
 
-    <section class="hero-container">
-      <h2 class="headline">Tell us your ideas and we'll bring them to life</h2>
+    <section class="hero-container phoenix-sun animatedParent">
+      <h2 class="hero-headline">Tell us your ideas and we'll bring them to life</h2>
       <p class="sub-headline">We craft digital experiences at an affordable price</p>
-      <button class="work-together-btn" type="button" name="button">LET'S WORK TOGETHER</button>
+      <div class="start-button">
+        <p>LET'S WORK TOGETHER</p>
+        <span class="arrow-down"></span>
+      </div>
+      <div class="animated bounceInUp phoenix-sun"></div>
     </section>
 
     <section class="service-container">
-      <h2 class="headline">Our Services</h2>
+      <h2 class="headline service-text">Our Services</h2>
       <ul class="service-list">
         <li class="service">
           <h3>Frontend Development</h3>
@@ -53,15 +51,15 @@
       </ul>
       <div class="skills-container">
         <h3 class="service-skills">Skills</h3>
-        <ul class="skills">
-          <li class="bg-html wow animated bounceInLeft"></li>
-          <li class="bg-css"></li>
-          <li class="bg-js"></li>
-          <li class="bg-ember"></li>
-          <li class="bg-react"></li>
-          <li class="bg-sass"></li>
-          <li class="bg-bootstrap"></li>
-          <li class="bg-wp"></li>
+        <ul class="skills animatedParent" data-sequence="100">
+          <li class="bg-html animated bounceInDown" data-id='1'></li>
+          <li class="bg-css animated bounceInDown" data-id='2'></li>
+          <li class="bg-js animated bounceInDown" data-id='3'></li>
+          <li class="bg-react animated bounceInDown" data-id='4'></li>
+          <li class="bg-ember animated bounceInDown" data-id='5'></li>
+          <li class="bg-sass animated bounceInDown" data-id='6'></li>
+          <li class="bg-bootstrap animated bounceInDown" data-id='7'></li>
+          <li class="bg-wp animated bounceInDown" data-id='8'></li>
         </ul>
       </div>
     </section>
@@ -69,7 +67,7 @@
     <section class="contact-container">
       <h2 class="headline">Contact</h2>
       <div class="info-container">
-        <p>We look forward to speakring with you!</p>
+        <p>We look forward to speaking with you!</p>
         <form class="form-container" method="POST" action="http://formspree.io/phoenixstudiocompany@gmail.com">
           <div class="form-fillout">
             <div class="contact-info">
@@ -93,6 +91,7 @@
     <footer class="footer">
       <span>&copy; 2017 Phoenix Studio</span>
     </footer>
+    <script type="text/javascript" src="js/vendor/animate-it.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

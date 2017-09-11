@@ -1,20 +1,63 @@
+$sunSize: 800px;
+
 .hero-container {
-  height: 100%;
-  padding: 10% 0 25% 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  .hero-headline {
+    font-size: 3em;
+    font-weight: 400;
+    font-family:  "Big Caslon", "Book Antiqua", Georgia, serif;;
+  }
+
+  .phoenix-sun {
+    width: $sunSize;
+    height: $sunSize;
+    position: absolute;
+    margin-top: 50px;
+    background-color: $phoenix-orange;
+    border-radius: 50%;
+    z-index: -1;
+  }
 
   .sub-headline {
+    font-weight: 400;
+    font-family:  "Big Caslon", "Book Antiqua", Georgia, serif;;
     margin-top: 10px;
     font-size: 1em;
   }
 
-  .work-together-btn {
-    margin-top: 40px;
-    padding:  20px;
-    background: white;
-    border: 1px solid $charcoal-black;
+  .start-button {
+    position: relative;
+    color: $white;
+    margin-top: 150px;
     cursor: pointer;
-    font-size: .8em;
-    font-family: avenir, Georgia, Serif;
+
+    .arrow-down {
+      left: 75px;
+      position: absolute;
+      border: solid $white;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 10px;
+      transform: rotate(45deg);
+      animation: slide 1s ease-in-out infinite alternate;
+      -webkit-transform: rotate(45deg);
+    }
   }
 
+  @keyframes slide {
+  from {
+    margin-top: 0px;
+    opacity: 1;
+  }
+  to {
+    margin-top: 15px;
+    opacity: 0;
+  }
+}
 }
