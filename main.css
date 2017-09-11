@@ -1,284 +1,89 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: avenir, Georgia, Serif; }
+/*
+Error: Invalid CSS after "    margin-top": expected ";", was ": 10px;"
+        on line 30 of stylesheets/modules/_hero.scss
+        from line 10 of stylesheets/main.scss
 
-body {
-  max-width: 1024px;
-  margin: 0 auto; }
+25:   }
+26: 
+27:   .sub-headline {
+28:     font-weight: 400;
+29:     font-family: avenir, Georgia, Serif
+30:     margin-top: 10px;
+31:     font-size: 1em;
+32:   }
+33: 
+34:   .start-button {
+35:     position: relative;
 
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  opacity: 0.9; }
-
-a:hover {
-  opacity: 1; }
-
-li {
-  list-style: none; }
-
-.headline {
-  font-weight: 400;
-  max-width: 500px;
-  font-size: 3.3em;
-  font-family: "Big Caslon", "Book Antiqua", Georgia, serif; }
-
-h3 {
-  font-weight: 400;
-  border-bottom: 6px solid #FFC669;
-  margin-bottom: 25px; }
-
-.frontend-skills, .bg-html, .bg-css, .bg-js, .bg-ember, .bg-react, .bg-sass, .bg-bootstrap, .bg-wp {
-  background-image: url("img/frontend-skills.png");
-  background-repeat: no-repeat; }
-
-.bg-html {
-  width: 84px;
-  height: 119px;
-  background-position: -291px -154px; }
-
-.bg-css {
-  width: 88px;
-  height: 124px;
-  background-position: -291px -10px; }
-
-.bg-js {
-  width: 94px;
-  height: 131px;
-  background-position: -10px -147px; }
-
-.bg-ember {
-  width: 132px;
-  height: 50px;
-  background-position: -10px -298px; }
-
-.bg-react {
-  width: 130px;
-  height: 117px;
-  background-position: -10px -10px; }
-
-.bg-sass {
-  width: 112px;
-  height: 85px;
-  background-position: -399px -10px; }
-
-.bg-bootstrap {
-  width: 108px;
-  height: 108px;
-  background-position: -160px -141px; }
-
-.bg-wp {
-  width: 111px;
-  height: 111px;
-  background-position: -160px -10px; }
-
-.nav-container {
-  display: flex;
-  margin: 1em 0;
-  height: 65px;
-  line-height: 65px;
-  justify-content: center;
-  align-items: center; }
-  .nav-container .title-header {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 4em;
-    color: #FFC669; }
-  .nav-container .nav-list {
-    display: flex;
-    flex-direction: row; }
-    .nav-container .nav-list li {
-      width: 100%;
-      margin-left: 55px;
-      padding-bottom: 10px; }
-
-.hero-container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center; }
-  .hero-container .hero-headline {
-    font-size: 3em;
-    font-weight: 400;
-    font-family: "Big Caslon", "Book Antiqua", Georgia, serif; }
-  .hero-container .phoenix-sun {
-    width: 800px;
-    height: 800px;
-    position: absolute;
-    margin-top: 50px;
-    background-color: #FFC669;
-    border-radius: 50%;
-    z-index: -1; }
-  .hero-container .sub-headline {
-    font-weight: 400;
-    font-family: "Big Caslon", "Book Antiqua", Georgia, serif;
-    margin-top: 10px;
-    font-size: 1em; }
-  .hero-container .start-button {
-    position: relative;
-    color: #FFFFFF;
-    margin-top: 150px;
-    cursor: pointer; }
-    .hero-container .start-button .arrow-down {
-      left: 75px;
-      position: absolute;
-      border: solid #FFFFFF;
-      border-width: 0 3px 3px 0;
-      display: inline-block;
-      padding: 10px;
-      transform: rotate(45deg);
-      animation: slide 1s ease-in-out infinite alternate;
-      -webkit-transform: rotate(45deg); }
-@keyframes slide {
-  from {
-    margin-top: 0px;
-    opacity: 1; }
-  to {
-    margin-top: 15px;
-    opacity: 0; } }
-.service-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 40px; }
-  .service-container .service-text {
-    padding-bottom: 50px; }
-  .service-container .service-list {
-    display: flex;
-    flex-direction: row;
-    margin: 35px 0;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-  .service-container .skills-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .service-container .service {
-    width: 300px;
-    margin: 0 auto 20px;
-    text-align: center; }
-  .service-container .service-skills {
-    width: 300px;
-    text-align: center; }
-  .service-container .skills {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin: 25px auto;
-    max-width: 600px; }
-    .service-container .skills li {
-      margin: 8px 15px; }
-
-.contact-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 40px; }
-  .contact-container .info-container {
-    width: 100%;
-    margin-top: 50px; }
-  .contact-container .form-container {
-    display: flex;
-    flex-direction: column; }
-  .contact-container .form-fillout {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 35px; }
-  .contact-container .contact-info {
-    margin-right: 40px; }
-  .contact-container input:focus::-webkit-input-placeholder {
-    color: transparent; }
-  .contact-container input {
-    border: none;
-    border-bottom: 1px solid #CECECE;
-    padding-bottom: 8px;
-    outline: none;
-    font-family: avenir, Georgia, Serif;
-    font-weight: 400; }
-    .contact-container input:focus {
-      border-bottom: 3px solid #009688; }
-  .contact-container input[type="email"] {
-    margin-top: 50px;
-    width: 100%; }
-  .contact-container .message-area {
-    flex-grow: 1;
-    resize: none;
-    padding: 10px;
-    border: 1px solid #CECECE;
-    border-radius: 2px;
-    outline: none; }
-    .contact-container .message-area:focus {
-      border-color: #009688; }
-  .contact-container .form-btn-container {
-    width: 100%;
-    display: flex;
-    justify-content: center; }
-  .contact-container .form-send-btn {
-    margin-top: 50px;
-    width: 200px;
-    padding: 15px;
-    border: none;
-    border-radius: 3px;
-    color: #FFFFFF;
-    font-family: avenir, Georgia, Serif;
-    font-weight: 400;
-    background-color: #009688; }
-
-.footer {
-  display: flex;
-  justify-content: center; }
-
-@media only screen and (max-width: 968px) {
-  .nav-container .title-header {
-    margin-top: 135px;
-    color: #FFFFFF; }
-
-  .hero-container .hero-headline {
-    font-size: 2em; }
-
-  .headline {
-    font-size: 2em;
-    text-align: center;
-    align-self: center; }
-
-  .service-container {
-    margin-top: 200px; }
-    .service-container .service-text {
-      padding: 20px 0; }
-
-  .contact-container .info-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 auto; }
-  .contact-container .form-fillout {
-    flex-direction: column; }
-  .contact-container .form-container {
-    width: 70%; }
-  .contact-container .form-fullname {
-    display: flex;
-    flex-direction: column; }
-    .contact-container .form-fullname input {
-      margin-bottom: 10px; }
-  .contact-container input[type="email"] {
-    margin-bottom: 50px; }
-  .contact-container .contact-info {
-    display: flex;
-    flex-direction: column;
-    margin-right: 0; } }
-@media only screen and (min-width: 1024px) {
-  .service-container {
-    margin-top: 200px; }
-    .service-container .service-text {
-      padding: 20px 0; } }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+stylesheets/modules/_hero.scss:30
+stylesheets/main.scss:10
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1208:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1203:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:804:in `block in try_declaration'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1254:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1254:in `rethrow'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:809:in `try_declaration'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:697:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:678:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:697:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:678:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:670:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:696:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:41:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/engine.rb:414:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/engine.rb:321:in `to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    margin-top\": expected \";\", was \": 10px;\"\A         on line 30 of stylesheets/modules/_hero.scss\A         from line 10 of stylesheets/main.scss\A \A 25:   }\A 26: \A 27:   .sub-headline {\A 28:     font-weight: 400;\A 29:     font-family: avenir, Georgia, Serif\A 30:     margin-top: 10px;\A 31:     font-size: 1em;\A 32:   }\A 33: \A 34:   .start-button {\A 35:     position: relative;"; }
