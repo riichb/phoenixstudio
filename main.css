@@ -238,7 +238,8 @@ h3 {
 
 @media only screen and (max-width: 968px) {
   .nav-container .title-header {
-    margin-top: 135px; }
+    margin-top: 135px;
+    color: #FFFFFF; }
 
   .hero-container .hero-headline {
     font-size: 2em; }
@@ -247,6 +248,11 @@ h3 {
     font-size: 2em;
     text-align: center;
     align-self: center; }
+
+  .service-container {
+    margin-top: 200px; }
+    .service-container .service-text {
+      padding: 20px 0; }
 
   .contact-container .info-container {
     display: flex;

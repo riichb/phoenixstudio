@@ -2,6 +2,7 @@
   .nav-container {
     .title-header {
       margin-top: 135px;
+      color: $white;
     }
   }
 
@@ -15,6 +16,13 @@
     font-size: 2em;
     text-align: center;
     align-self: center;
+  }
+
+  .service-container {
+    margin-top: 200px;
+    .service-text {
+      padding: 20px 0;
+    }
   }
 
   .contact-container {
