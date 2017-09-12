@@ -238,7 +238,7 @@ h3 {
   display: flex;
   justify-content: center; }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
   .nav-container {
     margin: 0; }
 
