@@ -103,9 +103,16 @@ h3 {
 
 .hero-container {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
   .hero-container .hero-headline {
     font-size: 3em;
@@ -115,9 +122,18 @@ h3 {
     position: absolute;
     padding-top: 550px; }
   .hero-container .phoenix-sun {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 800px;
     height: 800px;
@@ -140,9 +156,18 @@ h3 {
       border-width: 0 3px 3px 0;
       display: inline-block;
       padding: 10px;
+      -ms-transform: rotate(45deg);
       transform: rotate(45deg);
+      -webkit-animation: slide 1s ease-in-out infinite alternate;
       animation: slide 1s ease-in-out infinite alternate;
       -webkit-transform: rotate(45deg); }
+@-webkit-keyframes slide {
+  from {
+    margin-top: 0px;
+    opacity: 1; }
+  to {
+    margin-top: 15px;
+    opacity: 0; } }
 @keyframes slide {
   from {
     margin-top: 0px;
@@ -295,6 +320,7 @@ h3 {
   .headline {
     font-size: 2em;
     text-align: center;
+    -ms-flex-item-align: center;
     align-self: center; }
 
   .service-container {
@@ -303,24 +329,46 @@ h3 {
       padding: 20px 0; }
 
   .contact-container .info-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0 auto; }
   .contact-container .form-fillout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column; }
   .contact-container .form-container {
     width: 70%; }
   .contact-container .form-fullname {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column; }
     .contact-container .form-fullname input {
       margin-bottom: 10px; }
   .contact-container input[type="email"] {
     margin-bottom: 50px; }
   .contact-container .contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-right: 0; } }
 
