@@ -37,3 +37,11 @@ h3 {
   border-bottom: 6px solid $phoenix-orange;
   margin-bottom: 25px;
 }
+
+.lines {
+  margin-left: 15px;
+  width: 100px;
+  border-bottom: 3px solid black;
+  display: inline-block;
+  vertical-align: middle;
+}
