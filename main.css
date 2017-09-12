@@ -218,6 +218,7 @@ h3 {
     margin-top: 50px;
     width: 100%; }
   .contact-container .message-area {
+    font-family: avenir, Georgia, Serif;
     flex-grow: 1;
     resize: none;
     padding: 10px;
