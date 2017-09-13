@@ -20,31 +20,20 @@ $sunSize: 800px;
     font-family:  "Big Caslon", "Book Antiqua", Georgia, serif;;
   }
 
+  .phoenix-sun-img {
+    z-index: -1;
+    width: 90%;
+    height: auto;
+  }
+
+  .rotate-sun {
+    -webkit-animation: 4s linear 0s infinite rotated-sun;
+    animation: 3s linear 0s infinite rotated-sun;
+  }
+
   .hero-text-container {
     position: absolute;
     padding-top: 550px;
-  }
-
-  .phoenix-sun {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: $sunSize;
-    height: $sunSize;
-    margin-top: 50px;
-    background-color: $phoenix-orange;
-    border-radius: 50%;
-    z-index: -1;
   }
 
   .sub-headline {
@@ -70,6 +59,24 @@ $sunSize: 800px;
       -webkit-animation: slide 1s ease-in-out infinite alternate;
               animation: slide 1s ease-in-out infinite alternate;
       -webkit-transform: rotate(45deg);
+    }
+  }
+
+  @keyframes rotated-sun {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes rotated-sun {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
     }
   }
 

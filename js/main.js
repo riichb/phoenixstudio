@@ -9,3 +9,11 @@ $('.start-button').click(function() {
         scrollTop: $('.service-container').offset().top},
         'slow');
 });
+
+
+$('body').ready(function(){
+  setTimeout(function() {
+    $('.phoenix-sun-img').removeClass('animated bounceInUp')
+      .addClass('rotate-sun');
+  }, 2000);
+})
