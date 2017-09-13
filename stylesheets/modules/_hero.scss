@@ -34,7 +34,7 @@ $sunSize: 800px;
   .hero-text-container {
     z-index: 1;
     position: absolute;
-    padding-top: 550px;
+    padding-top: 55px;
   }
 
   .sub-headline {
@@ -50,16 +50,10 @@ $sunSize: 800px;
     cursor: pointer;
     margin-top: 100px;
 
-    .arrow-down {
-      border: solid $white;
-      border-width: 0 3px 3px 0;
-      display: inline-block;
-      padding: 10px;
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-      -webkit-animation: slide 1s ease-in-out infinite alternate;
-              animation: slide 1s ease-in-out infinite alternate;
-      -webkit-transform: rotate(45deg);
+    .arrow-icon {
+      margin-top: 20px;
+      -webkit-animation: slide 1.1s ease-in-out infinite alternate;
+      animation: slide 1.1s ease-in-out infinite alternate;
     }
   }
 
@@ -83,22 +77,18 @@ $sunSize: 800px;
 
   @-webkit-keyframes slide {
     from {
-      margin-top: 0px;
       opacity: 1;
     }
     to {
-      margin-top: 15px;
       opacity: 0;
     }
   }
 
   @keyframes slide {
     from {
-      margin-top: 0px;
       opacity: 1;
     }
     to {
-      margin-top: 15px;
       opacity: 0;
     }
   }
