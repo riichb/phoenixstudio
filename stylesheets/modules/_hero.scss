@@ -27,12 +27,11 @@ $sunSize: 800px;
   }
 
   .rotate-sun {
-    -webkit-animation: 7s linear 0s infinite rotated-sun;
-    animation: 7s linear 0s infinite rotated-sun;
+    -webkit-animation: 4s linear 0s infinite rotated-sun;
+    animation: 3s linear 0s infinite rotated-sun;
   }
 
   .hero-text-container {
-    z-index: 1;
     position: absolute;
     padding-top: 550px;
   }
