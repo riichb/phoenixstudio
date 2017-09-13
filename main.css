@@ -118,16 +118,29 @@ h3 {
     font-size: 3em;
     font-weight: 400;
     font-family: "Big Caslon", "Book Antiqua", Georgia, serif; }
-  .hero-container .phoenix-sun-img {
-    z-index: -1;
-    width: 90%;
-    height: auto; }
-  .hero-container .rotate-sun {
-    -webkit-animation: 4s linear 0s infinite rotated-sun;
-    animation: 3s linear 0s infinite rotated-sun; }
   .hero-container .hero-text-container {
     position: absolute;
     padding-top: 550px; }
+  .hero-container .phoenix-sun {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+    margin-top: 50px;
+    background-color: #FFC669;
+    border-radius: 50%;
+    z-index: -1; }
   .hero-container .sub-headline {
     font-weight: 400;
     font-family: avenir, Georgia, Serif;
@@ -148,16 +161,6 @@ h3 {
       -webkit-animation: slide 1s ease-in-out infinite alternate;
       animation: slide 1s ease-in-out infinite alternate;
       -webkit-transform: rotate(45deg); }
-@keyframes rotated-sun {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-@-webkit-keyframes rotated-sun {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
 @-webkit-keyframes slide {
   from {
     margin-top: 0px;
@@ -278,11 +281,13 @@ h3 {
   .hero-container .sub-headline {
     font-size: .7em;
     margin-bottom: 30px; }
-  .hero-container .phoenix-sun-img {
-    width: 50%; }
+  .hero-container .phoenix-sun {
+    width: 475px;
+    height: 470px;
+    margin-top: 15px; }
   .hero-container .hero-text-container {
     position: absolute;
-    padding-top: 350px; }
+    padding-top: 300px; }
 
   .service-container {
     margin-top: 200px; }
@@ -301,9 +306,14 @@ h3 {
     margin-bottom: 30px; }
   .hero-container .hero-text-container {
     position: absolute;
-    padding-top: 255px; }
-  .hero-container .phoenix-sun-img {
-    width: 90%; }
+    padding-top: 300px; }
+  .hero-container .phoenix-sun {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px; }
   .hero-container .start-button {
     margin-top: 45px; }
 
