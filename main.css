@@ -28,7 +28,7 @@ li {
 
 h3 {
   font-weight: 400;
-  border-bottom: 6px solid #FFC669;
+  border-bottom: 8px solid rgba(250, 188, 34, 0.5);
   margin-bottom: 25px; }
 
 .lines {
@@ -123,9 +123,10 @@ h3 {
     width: 90%;
     height: auto; }
   .hero-container .rotate-sun {
-    -webkit-animation: 4s linear 0s infinite rotated-sun;
-    animation: 3s linear 0s infinite rotated-sun; }
+    -webkit-animation: 7s linear 0s infinite rotated-sun;
+    animation: 7s linear 0s infinite rotated-sun; }
   .hero-container .hero-text-container {
+    z-index: 1;
     position: absolute;
     padding-top: 550px; }
   .hero-container .sub-headline {
