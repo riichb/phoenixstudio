@@ -35,6 +35,9 @@ $sunSize: 800px;
     z-index: 1;
     position: absolute;
     padding-top: 55px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .sub-headline {

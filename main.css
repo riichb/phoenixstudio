@@ -128,7 +128,10 @@ h3 {
   .hero-container .hero-text-container {
     z-index: 1;
     position: absolute;
-    padding-top: 55px; }
+    padding-top: 55px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
   .hero-container .sub-headline {
     font-weight: 400;
     font-family: avenir, Georgia, Serif;
